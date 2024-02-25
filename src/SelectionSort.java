@@ -1,6 +1,5 @@
 public class SelectionSort {
 
-    private static int count =0;
     public static void printArray(int arr[]){
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i] + " ");
@@ -21,9 +20,8 @@ public class SelectionSort {
                 int temp = arr[smallest];
                 arr[smallest] = arr[i];
                 arr[i] = temp;
-                count++;}
+                }
         }
         printArray(arr);
-        System.out.println(count);
     }
 }
